@@ -28,33 +28,44 @@ print(Texto)
 print(type(Texto))
  
  #TALLER
- 
 #Ingresar información por teclado
+print(" ")
+print("Ingresar informacion por teclado")
+print(" ")
 Informacion = input("Ingrese un dato ")
 print("El dato ingresado es:",Informacion)
 
 #Conversion de tipos de variable (tipos de datos primitivos)
+print(" ")
+print("conversion de datos")
+print(" ")
 print(int(8))
-print(float(8,5))
+print(float(8.5))
 print(str("Ocho"))
 print(bool(True))
 print(bool(False))
 
 #Bucles For y While
+print(" ")
+print("bucle for")
+print(" ")
 #For
-nc= int(input("Ingrese el numero maximo"))
+nc= int(input("Ingrese el numero maximo "))
 for i in range(1,(1+nc)):
-    print ("numeros",i)
+    print ("numero: ",i)
 
+print(" ")
 #While
+print("bucle while")
 numero = 1
-while numero <= 10:
+while numero <= 3:
     print(numero)
     numero +=1
 print("Proceso terminado")
 #Funciones (4 tipos)
+print(" ")
 print("Funciones")
-
+print(" ")
 #Funcion 1
 print("Funcion 1")
 def nose():
@@ -66,7 +77,7 @@ def saludo():
     print("Hola crackk")
 
 #Funcion 3
-print("Funcion3")
+print("Funcion 3")
 def SaludaNombre(nombre):
     print("Hola",nombre,"feliz dia")
 
