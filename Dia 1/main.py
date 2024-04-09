@@ -29,19 +29,22 @@ print(type(Texto))
  
  #TALLER
  
-#Cómo se ingresa información por teclado
+#Ingresar información por teclado
 Informacion = input("Ingrese un dato ")
 print("El dato ingresado es:",Informacion)
 
 #Conversion de tipos de variable (tipos de datos primitivos)
-print(int(2))
-print(float(2))
-print(str("Dos"))
+print(int(8))
+print(float(8,5))
+print(str("Ocho"))
 print(bool(True))
 print(bool(False))
 
 #Bucles For y While
 #For
+nc= int(input("Ingrese el numero maximo"))
+for i in range(1,(1+nc)):
+    print ("numeros",i)
 
 #While
 numero = 1
@@ -50,5 +53,26 @@ while numero <= 10:
     numero +=1
 print("Proceso terminado")
 #Funciones (4 tipos)
+print("Funciones")
+
+#Funcion 1
+print("Funcion 1")
+def nose():
+    print(2+4)
+
+#Funcion 2
+print("Funcion 2")
+def saludo():
+    print("Hola crackk")
+
+#Funcion 3
+print("Funcion3")
+def SaludaNombre(nombre):
+    print("Hola",nombre,"feliz dia")
+
+#Funcion 4
+print("Funcion 4")
+def multiplicacion(n,m):
+    return(n*m)
 
 #Desarrollado por Brayan Maldonado - Camper - TI 1.090.404.470
