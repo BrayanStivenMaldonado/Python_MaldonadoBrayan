@@ -18,3 +18,6 @@ if r==1:
             print(numero,"No es un número primo")
 if r==2:
    booleanito=False
+
+if r==3:
+    print("En Suiza es ilegal tener una sola cobaya. Se considera maltrato animal porque son seres sociales y se sienten solos.")
