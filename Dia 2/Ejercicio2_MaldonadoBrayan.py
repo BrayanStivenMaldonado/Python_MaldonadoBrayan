@@ -18,6 +18,6 @@ while booleanito==True: #mientras sea verdadero
     if numero!=aleatorio: #si el número ingresado por el usuario es diferente al generado por el programa se verifican las siguientes condiciones
         if numero>aleatorio: #si el número ingresado es mayor al aleatorio se le da el anuncio de que debe ingresar uno más pequeño
             print("Pista: El número es más pequeño")
-        else: #si el número ingresado es menor al aleatorio se le da el anuncio de que debe ingresar uno más grande
+        else: #si el número ingresado es menor al aleatorio se le da el anuncio de que debe ingresar uno mayor
             print("Pista: El número es más grande")            
 #Desarrollado por Brayan Maldonado - Camper - TI 1.090.404.470
