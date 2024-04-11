@@ -25,7 +25,7 @@ while True:
         print("BIENVENIDO DE NUEVO AL PROGRAMA")
 
     elif r==2:
-        print("Nos vemos luego :D")
+        print("Nos vemos luego c:")
         break
 
 #Desarrollado por Brayan Maldonado - Camper - TI 1.090.404.470
