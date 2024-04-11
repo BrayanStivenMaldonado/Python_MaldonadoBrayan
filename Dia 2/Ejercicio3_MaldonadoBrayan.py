@@ -13,7 +13,7 @@ for i in range(1,11):
     print("Ingrese un número del 1 al 100   Intento:",(i))
     numero= int(input(""))
     if numero==aleatorio:
-        print("!Felicidades¡, has ganado el juego en",(i),"intentos")
+        print("!Felicidades¡ :D, has ganado el juego en",(i),"intentos")
         break
     if numero!=aleatorio:
         if numero>aleatorio:

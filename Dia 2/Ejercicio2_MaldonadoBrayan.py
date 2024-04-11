@@ -11,7 +11,7 @@ for i in range(1,100):
     print("Ingrese un número del 1 al 100")
     numero= int(input(""))
     if numero==aleatorio:
-        print(":D")
+        print("c:")
         break
     if numero!=aleatorio:
         if numero>aleatorio:
