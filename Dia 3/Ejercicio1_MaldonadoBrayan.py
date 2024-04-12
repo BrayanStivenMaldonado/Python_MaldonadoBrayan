@@ -93,15 +93,18 @@ Fecha: 11/04/23
                             if LlevaEsp=="NO":
                                 Alfabeto=LetrasMa
 
-                Tamaño=int(input("¿Cuántos caracteres desea que tenga su contraseña? ")) #Se le pregunta al usuario cuántos carácteres desea que tenga su contraseña segura
-                print("")
-                Enter=input("Presione ENTER para ver su contraseña") #Se espera de una tecla para que no se muestre el resultado de una vez, para que sea vea más estético
-                Pass="" #se crea la variable "pass", en la cual se va a guardar la contraseña
-                for i in range(1,Tamaño+1): #para i desde 1 hasta el tamaño que diga el usuario+1
-                     Pass += "".join(secrets.choice(Alfabeto))  #A la varibale "pass" se le va a ir agregando un caracter al azar que esté dentro de la variable "abecedario"
-                
-                if i==Tamaño: #Cuando el contador alcance el valor que escogió el usuario se va a mostrar la contraseña
-                     print(Pass)
+                try:
+                    Tamaño=int(input("¿Cuántos caracteres desea que tenga su contraseña? ")) #Se le pregunta al usuario cuántos carácteres desea que tenga su contraseña segura
+                    print("")
+                except ValueError:
+                    print("Has ingresado un valor inválido")
+                    Enter=input("Presione ENTER para ver su contraseña") #Se espera de una tecla para que no se muestre el resultado de una vez, para que sea vea más estético
+                    Pass="" #se crea la variable "pass", en la cual se va a guardar la contraseña
+                    for i in range(1,Tamaño+1): #para i desde 1 hasta el tamaño que diga el usuario+1
+                        Pass += "".join(secrets.choice(Alfabeto))  #A la varibale "pass" se le va a ir agregando un caracter al azar que esté dentro de la variable "abecedario"
+                    
+                    if i==Tamaño: #Cuando el contador alcance el valor que escogió el usuario se va a mostrar la contraseña
+                        print(Pass)
 
             else: #Si escoge la opción 2 u otra diferente el booleano pasa a ser falso, lo que va a hacer que el programa se cierre
                 booleanito2=False
@@ -109,4 +112,4 @@ Fecha: 11/04/23
     else:
         print("NOS VEMOS LUEGOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO") #Despedida del programa
         break
-    ##Desarrollado por Brayan Maldonado - Camper - TI 1.090.404.470
+    #Desarrollado por Brayan Maldonado - Camper - TI 1.090.404.470
