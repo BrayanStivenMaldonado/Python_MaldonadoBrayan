@@ -18,13 +18,14 @@ while booleano==True: #Mientras sea verdadero repetir
                 if Dinero>=1000: #Si ingresa un valor mayor a 1000 se le da el anuncio de que no es posible ejecutar el programa con este valor
                     print("Está sobrepasando el valor máximo, intente con uno menor a 1000")
                     booleanote=False #y booleanote pasa a ser falso, lo que hace que el programa se cierre
-                else:                    
+                else:    
+                    contador=0                
                     for i in Monedas: #Para i, hasta el rango de la lista monedas (que es tres), se va a recorrer la lista
                         if Dinero >= i: #Si el dinero que ingrese el usuario es mayor al valor de la moneda en el puesto i se va a hacer lo siguiente
                             CantidadMonedas = Dinero // i #La cantidad de monedas de i, va a ser la división con resultado entero del valor de la moneda en el puesto i entre la cantidad de dinero que se tenga
                             print("\nLa cantidad de monedas de:",i,"que neceitas es:", CantidadMonedas) #Se le muestra la cantidad de moneda de i, que se necesitan
                             Dinero = Dinero % i #El dinero va a pasar a ser el restante de la división entre el dinero y el valor de las monedas en el puesto i
-                            contador = CantidadMonedas+CantidadMonedas #Contador que va a mostrar la cantidad de monedas que se entregaron en total
+                            contador+=CantidadMonedas#Contador que va a mostrar la cantidad de monedas que se entregaron en total
                     print("")
                     print("La cantidad de monedas que fueron entregadas es de: ",contador)
                     print("")
@@ -38,7 +39,8 @@ while booleano==True: #Mientras sea verdadero repetir
                         booleanito=False
                         booleanote=False
     if opc==2:
-        print("Este programa me está dando dolor de cabeza") #Relleno
+        print("")
+        print("SI LA VIDA TE DA LIMONES, HAS LIMONADA Bb") #Relleno
         print("")
         input("presione ENTER para continuar")
                 
