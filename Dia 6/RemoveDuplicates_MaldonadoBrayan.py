@@ -13,8 +13,9 @@ for i in range (0,n):
     numeros.append(int(input())) #Se crea la entrada para que ingrese los valores y estos mismo se manden a la lista "numeros"
     
 SinRepetidos = list(set(numeros)) #Creamos una nueva lista pero con "set" para que se eliminen los valores repetidos, ya que set es una coleccion de objetos únicos
-    
+
 print(numeros) #Se muestra la lista con todos los valores ingresados
-print(SinRepetidos) #Se muestra la lista sin los valores repetidos
+SinRepetidos.sort(reverse=False) #con el .sort(reverse=false) se ordena la lista en orden ascendente
+print(SinRepetidos) #Se muestra la lista sin los valores repetidos y ordenados de manera ascendente
 
 #Desarrollado por Brayan Maldonado - Camper - TI 1.090.404.470 
