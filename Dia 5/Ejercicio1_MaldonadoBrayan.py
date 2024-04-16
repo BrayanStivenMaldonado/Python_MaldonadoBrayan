@@ -1,22 +1,32 @@
-CantNumeros = int(input(""))   #La cantidad de valores que desea ingresar al programa
+def ContadorPares (n,k):
+    TamañoLista = len(n) #Tamaño de la lista en la que se van a guardar los valores que ingrese el usuario
+    contador = 0   #Contador para después mostrar la cantidad de las parejas que fueron válidas
+    Parejas = set() #Conjunto para guardar las parejas que se creen
+    Pares_sirven = [] #lista en la que se van a guardar las parejas que sean válidas
 
-n = [] #Lista en la que se van a guardar los valores que ingrese el usuario
+    #Bucle for para repetir las condiciones tantas veces como datos haya en la lista, para saber todos los resultados posibles
+    for i in range (TamañoLista):
+        for j in range (i+1, TamañoLista):
+            #condicion para verificar si la suma de la pareja es divisible por el valor "k"
+            if n[i] + n[j] % k == 0:
+                p = tuple(sorted((n[i] , n[j])))
+                if p not in Parejas:
+                    Parejas.add(p)
+                    Pares_sirven.append[p]
+                    contador += 1
+            
+    return Pares_sirven , contador
 
-T = int(input("")) #Cantidad de casos que desea realizar
+#Datos que ingresa el usuario
+entrada = (input("N: "))
+n = [int(num) for num in entrada] #Lista en la que se van a guardar los valores que ingrese el usuario
+k = int(input("k: ")) #Número por el que desea dividir las parejas que se creen 
 
-k = int(input("")) #Número por el que desea dividir las parejas que se creen 
+resultado, Pares_sirven = ContadorPares(n , k)
 
-for i in range (CantNumeros): #Se va a pedur la cantidad de valores que el usuario haya elegido
-    n.append(int(input("Ingrese sus valores "))) #Se agregan a la lista creada anteriormente
-print(n)
-
-contador = 0
-if 1<k<100001:    
-    for i in n:
-        if i%k==0:
-            contador = contador+1
-print(contador)
-                                         #No pude :c
-
-
+#Mostrar los resultados obtenidos
+print("Caso: ",resultado)
+print("Pares: ")
+for i in Pares_sirven:
+    print(i)
 #Desarrollado por Brayan Maldonado - Camper - TI 1.090.404.470 
