@@ -1,3 +1,5 @@
+#Contador de pares
+
 def ContadorPares (n,k):
     TamañoLista = len(n) #Tamaño de la lista en la que se van a guardar los valores que ingrese el usuario
     contador = 0   #Contador para después mostrar la cantidad de las parejas que fueron válidas

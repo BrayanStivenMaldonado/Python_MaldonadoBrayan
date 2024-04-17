@@ -1,4 +1,4 @@
-#Día #3
+#Numeros primos y contraseña segura
 
 import string #Se importa la libreria de string, para usarla más adelante en el programa
 import secrets #Se importa la libreria secrets, para que nos ayude a escoger caracteres aleatorios más adelante

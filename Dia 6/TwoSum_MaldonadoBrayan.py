@@ -1,3 +1,5 @@
+#Two sum
+
 numeros = [] #Lista en la que se van a guardar los valores que ingrese el usuario
 CantVal = int(input("CantVal: ")) #Cantidad de valores que va a agregar
 for i in range (CantVal): #Se repite la cantidad de veces que el usuario haya dicho

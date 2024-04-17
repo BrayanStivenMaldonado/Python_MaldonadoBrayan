@@ -1,3 +1,5 @@
+#Remove Duplicates
+
 numeros = [] #Lista en la que se van a guardar los valores que ingrese el usuario
 booleanito = True
 while booleanito == True:
