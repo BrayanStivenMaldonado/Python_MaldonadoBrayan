@@ -2,7 +2,7 @@
 #----DIA 1 CHEAT SHEET PYTHON----#
 #--------------------------------#
 
-#imprimir hola mundo
+#imprimir hola mundo 
 print("Hola mundoooooo!")
 
 #Datos primitivos 

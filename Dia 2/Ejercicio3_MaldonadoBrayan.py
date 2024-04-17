@@ -1,4 +1,4 @@
-#Adivinar el número aleatorio que genera el programa y felicita al jugador cuando gana
+#Adivinar el número aleatorio que genera el programa y felicita al jugador cuando gana 
 
 print("   BIENVENIDO AL JUEGO DE ADIVINAR EL NUMERO ALEATORIO")     #se le da la bienvenida al usuario y se le explica cómo funciona el juego
 print("""1). Tu objetivo va a ser adivinar el número en la menor cantidad de intentos
