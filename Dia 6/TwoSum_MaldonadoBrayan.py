@@ -14,18 +14,51 @@ if tamaño >= 2 and tamaño<=10000: #Condición dada por el ejercicio
             if numeros[i]+numeros[i+1]==target: #se le da la condición del valor de números que haya para evitar problemas
                 print(i, i+1)
                 break
-        if len (numeros)<=3:
+            else:
+                print("No se encontró")
+            
+            
+        if len (numeros)==3:
             if numeros[i]+numeros[i+2]==target:
                 print(i,i+2)
                 break
-        if len (numeros)<=4:
+            if numeros[i]+numeros[i+1]==target: 
+                print(i, i+1)
+                break
+            else:
+                print("No se encontró")
+            
+            
+        if len (numeros)==4:
             if numeros[i]+numeros[i+3]==target:
                 print(i,i+3)
                 break
-        if len(numeros)<=5:
+            if numeros[i]+numeros[i+2]==target:
+                print(i,i+2)
+                break
+            if numeros[i]+numeros[i+1]==target: 
+                print(i, i+1)
+                break
+            else:
+                print("No se encontró")
+            
+        if len(numeros)==5:
+            if numeros[i]+numeros[i+1]==target:
+                print(i, i+1)
+                break
+            if numeros[i]+numeros[i+2]==target:
+                print(i,i+2)
+                break
+            if numeros[i]+numeros[i+3]==target:
+                print(i,i+3)
+                break
             if numeros[i]+numeros[i+4]==target:
-                print(i,i+4) 
-else:
-    print("debe tener más de un valor")
+                print(i,i+4)
+                break
+            else:
+                print("No se encontró")
+               
+        else:
+                print("debe tener más de un valor")
     
 #Desarrollado por Brayan Maldonado - Camper - TI 1.090.404.470
