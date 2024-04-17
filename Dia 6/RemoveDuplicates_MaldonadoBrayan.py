@@ -1,23 +1,8 @@
-#Remove Duplicates
-
-numeros = [] #Lista en la que se van a guardar los valores que ingrese el usuario
-booleanito = True
-while booleanito == True:
-    n = int(input("CantVal: ")) #Entrada para saber cuántos valores va a ingresar
-    if n>0 and 300>n:
-        booleanito = False
-    else:
-        print("El valor debe estár entre 1 y 299")
-        booleanito = True
-
-for i in range (0,n):
-    print("Val", i+1,":") #
-    numeros.append(int(input())) #Se crea la entrada para que ingrese los valores y estos mismo se manden a la lista "numeros"
-    
-SinRepetidos = list(set(numeros)) #Creamos una nueva lista pero con "set" para que se eliminen los valores repetidos, ya que set es una coleccion de objetos únicos
-
-print(numeros) #Se muestra la lista con todos los valores ingresados
-SinRepetidos.sort(reverse=False) #con el .sort(reverse=false) se ordena la lista en orden ascendente
-print(SinRepetidos) #Se muestra la lista sin los valores repetidos y ordenados de manera ascendente
+#Remove Duplicates 
+entrada = input()
+lista = list(sorted(set(map(int, entrada.split(",")[0:300]))))
+#se crea la lista, se usa el sorted para que ordene en orden ascendente, el set para eliminar los valores repetidos, el map para que me convierta en int la entrada
+#y el split para que separe los valores que ingrese el usuario con el criterio de la ",".
+print(lista)
 
 #Desarrollado por Brayan Maldonado - Camper - TI 1.090.404.470 
