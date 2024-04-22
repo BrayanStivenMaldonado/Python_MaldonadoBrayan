@@ -48,3 +48,5 @@ while booleanito == True: #Cada vez que salga de una opción vuelva al menú, a 
     if eleccion==3: #Si la elección es igual a 3, se cierra el programa
         print("Gracias por usar mi programa, nos vemos luego :D") #Despedida
         booleanito = False
+
+#Desarrollado por Brayan Maldonado - Camper - TI 1.090.404.470
