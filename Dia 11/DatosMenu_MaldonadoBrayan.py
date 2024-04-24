@@ -7,14 +7,14 @@ import json
 with open('Dia 11/Brayan.json', encoding='utf-8') as f:
     datos = json.load(f)
 
-#Conjuntos en los que van a ir guardados algunos valores para posteriormente imprimirlos cuando se requiera
-TodosID = []
-TodosEventos = []
-Evento = []
-
 booleano =True #Definimos como "True" un booleano para usarlo como condicional del "while"
 
 while booleano == True: #Cada vez que salga de una opción vuelve al menú de opciones
+    
+    #Conjuntos en los que van a ir guardados algunos valores para posteriormente imprimirlos cuando se requiera
+    TodosID = []
+    TodosEventos = []
+    Evento = []
 
     for i in range (len(datos)): #Guardar todos los eventos en una lista separada
         TodosEventos.append(datos[i]["type"])
